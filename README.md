@@ -15,9 +15,9 @@ Takes a user number input and creates an array up to that number then replaces e
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
+* open bash or similar terminal
+* run the command ```git bash https://github.com/bobcat673/Mr.-Robogers-Neighborhood.git```
+* run index.html
 
 ## Known Bugs
 
