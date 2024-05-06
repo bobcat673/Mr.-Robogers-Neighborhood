@@ -28,6 +28,7 @@ return mixedArray
 window.onload = function() {
   let output = document.getElementById("output");
   document.getElementById("submit").onclick = function(event) {
+    output.innerHTML = ""
     event.preventDefault();
     let numberArray = replaceNumber(formatInput(document.getElementById("input").value));
     numberArray.forEach(function(number) {
