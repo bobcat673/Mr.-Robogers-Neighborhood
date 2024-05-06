@@ -1,6 +1,6 @@
 function formatInput(input) {
   let numberArray = []
-  for (let i = 0; i < parseInt(input+1); i++) {
+  for (let i = 0; i < parseInt(input)+1; i++) {
     numberArray.push(i);
   };
 return numberArray
@@ -9,7 +9,6 @@ return numberArray
 function replaceNumber(numberArray) {
   let mixedArray = [];
   numberArray.forEach(function(number) {
-      console.log(number)
     if (number.toString().includes(3) === true) {
       mixedArray.push("Won't you be my neighbor?");
     } else if (number.toString().includes(2) === true) {
@@ -21,4 +20,24 @@ function replaceNumber(numberArray) {
     };
   });
 return mixedArray
+};
+
+
+// UI logic
+
+window.onload = function() {
+  console.log("loaded");
+  let output = document.getElementById("output");
+  document.getElementById("submit").onclick = function(event) {
+    console.log("clicked");
+    event.preventDefault();
+    let numberArray = replaceNumber(formatInput(document.getElementById("input").value));
+    numberArray.forEach(function(number) {
+      console.log(number)
+      let listItem = document.createElement("li");
+      listItem.innerText = number;
+      output.append(listItem);
+      document.querySelector("body").append(output);
+    });
+  };
 };
