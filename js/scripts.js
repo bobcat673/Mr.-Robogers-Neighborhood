@@ -26,14 +26,11 @@ return mixedArray
 // UI logic
 
 window.onload = function() {
-  console.log("loaded");
   let output = document.getElementById("output");
   document.getElementById("submit").onclick = function(event) {
-    console.log("clicked");
     event.preventDefault();
     let numberArray = replaceNumber(formatInput(document.getElementById("input").value));
     numberArray.forEach(function(number) {
-      console.log(number)
       let listItem = document.createElement("li");
       listItem.innerText = number;
       output.append(listItem);
