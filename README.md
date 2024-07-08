@@ -16,7 +16,7 @@ Takes a user number input and creates an array up to that number then replaces e
 ## Setup/Installation Requirements
 
 * open bash or similar terminal
-* run the command ```git bash https://github.com/bobcat673/Mr.-Robogers-Neighborhood.git```
+* run the command ```git clone https://github.com/bobcat673/Mr.-Robogers-Neighborhood.git```
 * run index.html
 
 ## Known Bugs
@@ -57,7 +57,7 @@ SOFTWARE.
     result: [0,1,2,3,4,5]
 
 
-  Describe replace(input)
+  Describe replaceNumber(input)
   
     Test: takes the input array and checks for numbers that have a 1 or 2 or 3 and replaces them with "Beep!" or "Boop!" or "Won't you be my neighbor?" 
     code: replace([0,1,2,3,4])

@@ -3,7 +3,7 @@ function formatInput(input) {
   for (let i = 0; i < parseInt(input)+1; i++) {
     numberArray.push(i);
   };
-return numberArray
+  return numberArray;
 };
 
 function replaceNumber(numberArray) {
@@ -19,7 +19,7 @@ function replaceNumber(numberArray) {
       mixedArray.push(number);
     };
   });
-return mixedArray
+  return mixedArray;
 };
 
 
@@ -28,7 +28,7 @@ return mixedArray
 window.onload = function() {
   let output = document.getElementById("output");
   document.getElementById("submit").onclick = function(event) {
-    output.innerHTML = ""
+    output.innerHTML = "";
     event.preventDefault();
     let numberArray = replaceNumber(formatInput(document.getElementById("input").value));
     numberArray.forEach(function(number) {
