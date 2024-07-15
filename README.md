@@ -11,7 +11,7 @@
 
 ## Description
 
-Takes a user number input and creates an array up to that number then replaces each number with 1, 2, or 3 with "beep" , "boop", and "Won't you be my neighbor?"
+Takes a user number input and creates an array up to that number then replaces each number with 1, 2, or 3 with "Beep!", "Boop", and "Won't you be my neighbor?"
 
 ## Setup/Installation Requirements
 
@@ -59,6 +59,6 @@ SOFTWARE.
 
   Describe replaceNumber(input)
   
-    Test: takes the input array and checks for numbers that have a 1 or 2 or 3 and replaces them with "Beep!" or "Boop!" or "Won't you be my neighbor?" 
-    code: replace([0,1,2,3,4])
+    Test: takes the input array and checks for numbers that have a 1 or 2 or 3 and replaces them with "Beep!" or "Boop" or "Won't you be my neighbor?" 
+    code: replaceNumber([0,1,2,3,4])
     result: "[0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5]"
